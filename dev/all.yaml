@@ -2,9 +2,10 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   name: githubactions-sample-dev
 ---
 apiVersion: v1
@@ -12,9 +13,10 @@ kind: Service
 metadata:
   annotations:
     app: frontend
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   labels:
     app: guestbook
   name: guestbook
@@ -32,9 +34,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-master
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   labels:
     app: redis
     role: master
@@ -53,9 +56,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-slave
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   labels:
     app: redis
     role: slave
@@ -74,9 +78,10 @@ kind: Deployment
 metadata:
   annotations:
     app: frontend
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   name: frontend
   namespace: githubactions-sample-dev
 spec:
@@ -88,9 +93,10 @@ spec:
     metadata:
       annotations:
         app: frontend
-        git-branch: refs/pull/13/merge
+        build-id: 149557660
+        git-branch: feat/k8s_manifest_push}
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-        git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+        git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
       labels:
         app: guestbook
     spec:
@@ -116,9 +122,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-master
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   labels:
     app: redis
     role: master
@@ -134,9 +141,10 @@ spec:
     metadata:
       annotations:
         app: redis-master
-        git-branch: refs/pull/13/merge
+        build-id: 149557660
+        git-branch: feat/k8s_manifest_push}
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-        git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+        git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
       labels:
         app: redis
         role: master
@@ -157,9 +165,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-slave
-    git-branch: refs/pull/13/merge
+    build-id: 149557660
+    git-branch: feat/k8s_manifest_push}
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+    git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
   labels:
     app: redis
     role: slave
@@ -175,9 +184,10 @@ spec:
     metadata:
       annotations:
         app: redis-slave
-        git-branch: refs/pull/13/merge
+        build-id: 149557660
+        git-branch: feat/k8s_manifest_push}
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-        git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+        git-sha: 7c3e36c5c0b858cce132ef12b410ec96b452e98f
       labels:
         app: redis
         role: slave
