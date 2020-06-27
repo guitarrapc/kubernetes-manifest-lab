@@ -4,8 +4,8 @@ metadata:
   annotations:
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
-  name: githubactions-sample--dev
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
+  name: githubactions-sample-dev
 ---
 apiVersion: v1
 kind: Service
@@ -14,11 +14,11 @@ metadata:
     app: frontend
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
   labels:
     app: guestbook
   name: guestbook
-  namespace: githubactions-sample--dev
+  namespace: githubactions-sample-dev
 spec:
   ports:
   - port: 3000
@@ -34,12 +34,12 @@ metadata:
     app: redis-master
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
   labels:
     app: redis
     role: master
   name: redis-master
-  namespace: githubactions-sample--dev
+  namespace: githubactions-sample-dev
 spec:
   ports:
   - port: 6379
@@ -55,12 +55,12 @@ metadata:
     app: redis-slave
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
   labels:
     app: redis
     role: slave
   name: redis-slave
-  namespace: githubactions-sample--dev
+  namespace: githubactions-sample-dev
 spec:
   ports:
   - port: 6379
@@ -76,9 +76,9 @@ metadata:
     app: frontend
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
   name: frontend
-  namespace: githubactions-sample--dev
+  namespace: githubactions-sample-dev
 spec:
   replicas: 3
   selector:
@@ -90,7 +90,7 @@ spec:
         app: frontend
         git-branch: refs/pull/13/merge
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-        git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+        git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
       labels:
         app: guestbook
     spec:
@@ -118,12 +118,12 @@ metadata:
     app: redis-master
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
   labels:
     app: redis
     role: master
   name: redis-master
-  namespace: githubactions-sample--dev
+  namespace: githubactions-sample-dev
 spec:
   replicas: 1
   selector:
@@ -136,7 +136,7 @@ spec:
         app: redis-master
         git-branch: refs/pull/13/merge
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-        git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+        git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
       labels:
         app: redis
         role: master
@@ -159,12 +159,12 @@ metadata:
     app: redis-slave
     git-branch: refs/pull/13/merge
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-    git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+    git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
   labels:
     app: redis
     role: slave
   name: redis-slave
-  namespace: githubactions-sample--dev
+  namespace: githubactions-sample-dev
 spec:
   replicas: 2
   selector:
@@ -177,7 +177,7 @@ spec:
         app: redis-slave
         git-branch: refs/pull/13/merge
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/13
-        git-sha: 963b5a537d99035bdd892b39cc9c76225de30042
+        git-sha: 557fe68ba88d5da13164775b38accd57be2e083a
       labels:
         app: redis
         role: slave
