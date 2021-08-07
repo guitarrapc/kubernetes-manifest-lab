@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   name: githubactions-sample-dev
 ---
 apiVersion: v1
@@ -13,10 +13,10 @@ kind: Service
 metadata:
   annotations:
     app: frontend
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   labels:
     app: guestbook
   name: guestbook
@@ -34,10 +34,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-master
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   labels:
     app: redis
     role: master
@@ -56,10 +56,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-slave
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   labels:
     app: redis
     role: slave
@@ -78,10 +78,10 @@ kind: Deployment
 metadata:
   annotations:
     app: frontend
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   name: frontend
   namespace: githubactions-sample-dev
 spec:
@@ -93,10 +93,10 @@ spec:
     metadata:
       annotations:
         app: frontend
-        build-id: 361101470
+        build-id: 1032347238
         git-branch: master
-        git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-        git-sha: 617af22571292c6b377f714793b10bb6af92932c
+        git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+        git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
       labels:
         app: guestbook
     spec:
@@ -122,10 +122,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-master
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   labels:
     app: redis
     role: master
@@ -141,10 +141,10 @@ spec:
     metadata:
       annotations:
         app: redis-master
-        build-id: 361101470
+        build-id: 1032347238
         git-branch: master
-        git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-        git-sha: 617af22571292c6b377f714793b10bb6af92932c
+        git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+        git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
       labels:
         app: redis
         role: master
@@ -165,10 +165,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-slave
-    build-id: 361101470
+    build-id: 1032347238
     git-branch: master
-    git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-    git-sha: 617af22571292c6b377f714793b10bb6af92932c
+    git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+    git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
   labels:
     app: redis
     role: slave
@@ -184,10 +184,10 @@ spec:
     metadata:
       annotations:
         app: redis-slave
-        build-id: 361101470
+        build-id: 1032347238
         git-branch: master
-        git-link: https://github.com/guitarrapc/githubactions-lab/commit/ee35839da17cc7053da516f8942e986606cc33e3
-        git-sha: 617af22571292c6b377f714793b10bb6af92932c
+        git-link: https://github.com/guitarrapc/githubactions-lab/commit/83acbf4caafbe8dc0fb7c82c80eb72d4ad506064
+        git-sha: c244ea0ba7bfd30b51e9becbe9d155594589defc
       labels:
         app: redis
         role: slave
