@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   name: githubactions-sample-dev/githubactions-lab/main
 ---
 apiVersion: v1
@@ -13,10 +13,10 @@ kind: Service
 metadata:
   annotations:
     app: frontend
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   labels:
     app: guestbook
   name: guestbook
@@ -34,10 +34,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-master
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   labels:
     app: redis
     role: master
@@ -56,10 +56,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-slave
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   labels:
     app: redis
     role: slave
@@ -78,10 +78,10 @@ kind: Deployment
 metadata:
   annotations:
     app: frontend
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   name: frontend
   namespace: githubactions-sample-dev/githubactions-lab/main
 spec:
@@ -93,10 +93,10 @@ spec:
     metadata:
       annotations:
         app: frontend
-        build-id: 21205093182
+        build-id: 21205392803
         git-branch: main
         git-link: 
-        git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+        git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
       labels:
         app: guestbook
     spec:
@@ -122,10 +122,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-master
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   labels:
     app: redis
     role: master
@@ -141,10 +141,10 @@ spec:
     metadata:
       annotations:
         app: redis-master
-        build-id: 21205093182
+        build-id: 21205392803
         git-branch: main
         git-link: 
-        git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+        git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
       labels:
         app: redis
         role: master
@@ -165,10 +165,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-slave
-    build-id: 21205093182
+    build-id: 21205392803
     git-branch: main
     git-link: 
-    git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+    git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
   labels:
     app: redis
     role: slave
@@ -184,10 +184,10 @@ spec:
     metadata:
       annotations:
         app: redis-slave
-        build-id: 21205093182
+        build-id: 21205392803
         git-branch: main
         git-link: 
-        git-sha: 5296f17100018eee83b7f27934a2ab5665bab0e7
+        git-sha: 7c3f0ea645425c4b324b4fb9dad5ee589469871b
       labels:
         app: redis
         role: slave
