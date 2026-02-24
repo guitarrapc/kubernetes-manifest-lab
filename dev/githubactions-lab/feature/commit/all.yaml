@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   name: githubactions-sample-dev/githubactions-lab/feature/commit
 ---
 apiVersion: v1
@@ -13,10 +13,10 @@ kind: Service
 metadata:
   annotations:
     app: frontend
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   labels:
     app: guestbook
   name: guestbook
@@ -34,10 +34,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-master
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   labels:
     app: redis
     role: master
@@ -56,10 +56,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-slave
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   labels:
     app: redis
     role: slave
@@ -78,10 +78,10 @@ kind: Deployment
 metadata:
   annotations:
     app: frontend
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   name: frontend
   namespace: githubactions-sample-dev/githubactions-lab/feature/commit
 spec:
@@ -93,10 +93,10 @@ spec:
     metadata:
       annotations:
         app: frontend
-        build-id: 22344261076
+        build-id: 22344613387
         git-branch: feature/commit
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-        git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+        git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
       labels:
         app: guestbook
     spec:
@@ -122,10 +122,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-master
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   labels:
     app: redis
     role: master
@@ -141,10 +141,10 @@ spec:
     metadata:
       annotations:
         app: redis-master
-        build-id: 22344261076
+        build-id: 22344613387
         git-branch: feature/commit
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-        git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+        git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
       labels:
         app: redis
         role: master
@@ -165,10 +165,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-slave
-    build-id: 22344261076
+    build-id: 22344613387
     git-branch: feature/commit
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-    git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+    git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
   labels:
     app: redis
     role: slave
@@ -184,10 +184,10 @@ spec:
     metadata:
       annotations:
         app: redis-slave
-        build-id: 22344261076
+        build-id: 22344613387
         git-branch: feature/commit
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/299
-        git-sha: 844b686c711491e494e3d4de21a926a1f8c77607
+        git-sha: 8324dc71ef67179c053100f1d59d5bcc0fdfffd1
       labels:
         app: redis
         role: slave
