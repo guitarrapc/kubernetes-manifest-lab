@@ -2,10 +2,10 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   name: githubactions-sample-dev/githubactions-lab/parallel
 ---
 apiVersion: v1
@@ -13,10 +13,10 @@ kind: Service
 metadata:
   annotations:
     app: frontend
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   labels:
     app: guestbook
   name: guestbook
@@ -34,10 +34,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-master
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   labels:
     app: redis
     role: master
@@ -56,10 +56,10 @@ kind: Service
 metadata:
   annotations:
     app: redis-slave
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   labels:
     app: redis
     role: slave
@@ -78,10 +78,10 @@ kind: Deployment
 metadata:
   annotations:
     app: frontend
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   name: frontend
   namespace: githubactions-sample-dev/githubactions-lab/parallel
 spec:
@@ -93,10 +93,10 @@ spec:
     metadata:
       annotations:
         app: frontend
-        build-id: 28229822795
+        build-id: 28230305685
         git-branch: parallel
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-        git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+        git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
       labels:
         app: guestbook
     spec:
@@ -122,10 +122,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-master
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   labels:
     app: redis
     role: master
@@ -141,10 +141,10 @@ spec:
     metadata:
       annotations:
         app: redis-master
-        build-id: 28229822795
+        build-id: 28230305685
         git-branch: parallel
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-        git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+        git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
       labels:
         app: redis
         role: master
@@ -165,10 +165,10 @@ kind: Deployment
 metadata:
   annotations:
     app: redis-slave
-    build-id: 28229822795
+    build-id: 28230305685
     git-branch: parallel
     git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-    git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+    git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
   labels:
     app: redis
     role: slave
@@ -184,10 +184,10 @@ spec:
     metadata:
       annotations:
         app: redis-slave
-        build-id: 28229822795
+        build-id: 28230305685
         git-branch: parallel
         git-link: https://github.com/guitarrapc/githubactions-lab/pull/329
-        git-sha: 363dbee451cb90c5e3b8d6da972a46022af4aeeb
+        git-sha: 814a47e481155a72b4f058426e9ffa881a039ba1
       labels:
         app: redis
         role: slave
